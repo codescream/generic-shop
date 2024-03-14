@@ -51,8 +51,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex justify-between text-base text-slate-200">
-          <p>© Copyright. All rights reserved.</p>
-          <p>Terms & Conditions</p>
+          <p className="cursor-pointer">© Copyright. All rights reserved.</p>
+          <p className="cursor-pointer">Terms & Conditions</p>
       </div>
     </div>
   )
