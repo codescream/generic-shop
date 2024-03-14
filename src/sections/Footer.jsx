@@ -34,7 +34,7 @@ const Footer = () => {
         <div className="flex flex-[3_3_0%] gap-10 font-montserrat text-2xl font-semibold text-white justify-between flex-wrap">
           {
             footerLinks.map((footerlink) => (
-              <div key={footerlink.title} className="">
+              <div key={footerlink.title}>
                 <h2 className="text-coral-red">{footerlink.title}</h2>
                   <ul className="mt-4 text-base text-slate-200 font-normal">
                     {
@@ -50,7 +50,7 @@ const Footer = () => {
           }
         </div>
       </div>
-      <div className="flex justify-between text-base text-slate-200">
+      <div className="flex flex-col gap-3 items-center justify-between text-base text-slate-200 sm:flex-row">
           <p className="cursor-pointer">© Copyright. All rights reserved.</p>
           <p className="cursor-pointer">Terms & Conditions</p>
       </div>
