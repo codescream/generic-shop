@@ -12,6 +12,7 @@ const Footer = () => {
               alt="nike"
               width={150}
               height={150}
+              className="text-coral-red"
             />
           </a>
           <p className="flex text-slate-300 text-lg">
@@ -34,12 +35,12 @@ const Footer = () => {
           {
             footerLinks.map((footerlink) => (
               <div key={footerlink.title} className="">
-                <h2>{footerlink.title}</h2>
+                <h2 className="text-coral-red">{footerlink.title}</h2>
                   <ul className="mt-4 text-base text-slate-200 font-normal">
                     {
                       footerlink.links.map((li) => (
-                        <li key={li.name} className="my-2 hover:text-slate-600">
-                          {li.name}
+                        <li key={li.name} className="my-2 hover:text-slate-600 w-fit">
+                          <a href={li.link}>{li.name}</a>
                         </li>
                       ))
                     }
